@@ -10,6 +10,8 @@ import os
 
 # Setup the pin with internal pullups enabled and pin in reading mode.
 
+# FIRST CHECK PIN INDEX SEE THE PIN GROUP 
+
 #GPIO.setmode(GPIO.BCM)
 GPIO.setmode(GPIO.BOARD)
 GPIO.setup(5, GPIO.IN, pull_up_down=GPIO.PUD_UP)
@@ -19,6 +21,7 @@ def Shutdown(channel):
     messageBox.showinfo("System Going Down....")
     #print("Shutting Down")
     time.sleep(5)
+    os.system("killall -e rdesktop")
     os.system("sudo shutdown -h now")
  
  # Add our function to execute when the button pressed event happens
