@@ -1,0 +1,6 @@
+
+[Desktop Entry]
+Type=Application
+Name=remote
+Exec=rdesktop 80.0.0.139 -f -u  -p  -x:l
+terminal=false
