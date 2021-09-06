@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Comment=start rdesktop to LAN_IP
+Name=my remote PC
+Icon=network
+Exec=lxterminal -e /home/pi/projects/test_rdesktop/rdesktop_start.sh
